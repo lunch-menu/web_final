@@ -1,0 +1,624 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{padding: 0;
+        margin: 0;}
+        .container{
+            width: 1200px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .header-top-pc{
+            background-color: rgb(231, 231, 231) !important;
+        }
+        .header-top-pc .container{
+            display: flex;
+            flex-direction: row-reverse;
+        }
+        .header-top-pc .container a{
+            margin-left: 24px;
+            text-decoration: none;
+            color: rgb(87, 87, 87);
+            font-size: 12px;
+            line-height: 28px;
+        }
+        .header-top .container{
+            padding-top: 8px;
+            box-sizing: border-box;
+            display: flex;
+            justify-content: space-between;
+            line-height: 60px;
+        }
+        .header-menu a{
+            color: rgb(124, 124, 124);
+        }
+        .header-menu a:hover{
+            color: rgb(0, 0, 0);
+            font-weight: 900;
+            border-bottom: solid 5px rgb(139, 139, 139);
+            transition-duration: 0.5s;
+        }
+        .main-graph{
+            width: 100%;
+            height: 560px;
+            background-image:url(https://i.postimg.cc/NfBdpxfT/launching-banner-apparel-2x.png);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+        .mainGraph span{
+            font-weight: 700;
+        }
+        .mainGraph a{
+            text-decoration: none;
+            color: black;
+        }
+        .header-menu{
+            transition-duration: 0.5s
+        }
+        .header-menu a{
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+            font-weight: 500;
+        }
+        .info-box{
+            height: 200px;
+        }
+        .info-box1{
+            display: flex;
+            justify-content: space-between;
+        }
+        .info-box1 a{
+            text-decoration: none;
+            margin-top: 12px;
+            color: rgb(56, 56, 56);
+        }
+        .info{margin-left: 10px;
+        width: 50%;
+        margin-top: 60px;
+        margin-bottom: 28px;}
+        .bid{width: 100px;}
+        .info span{
+            font-weight: 700;
+            font-size: 28px;
+        }
+        .inquiry span{
+            font-weight: 700;
+            font-size: 28px;
+        }
+        .inquiry-info{
+            display: flex;
+            margin-top: 20px;
+        }
+        .inquiry{width: 50%;
+            margin-top: 60px;
+        margin-bottom: 48px;
+        margin-right: 2px;
+        }
+        .inquiry-box{
+            height: 188px;
+            display: flex;
+        }
+        .inquiry-box .ITEM1{
+            padding: 12px;
+            width: 34%;
+            height: 160px;
+            flex-direction: column;
+            background-color: #F4F4F4;
+            margin-right: 4px;
+        }
+        .inquiry-info{
+            margin-left: auto;
+            margin-right: auto;
+            width: 1160px;
+        }
+        .inquiry-box .ITEM2{
+            width: 150px;
+            margin-bottom: 8px;
+            margin-right: 4px;
+            margin-left: 4px;
+            padding: 12px;
+            height: 64px;
+            background-color: #F4F4F4;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .inquiry-box a{
+            text-decoration: none;
+            color: black;
+        }
+        .benner{
+            background-color: #F1D6C5;
+            text-align: center;
+        }
+        .contain-promote{
+            display: flex;
+            justify-content: space-between;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .promotion-wrap .container{
+            box-sizing: border-box;
+            padding: 0 20px 30px 20px;
+        }
+        .button {
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            }
+        .review-box .st1{
+            position: relative;
+            margin-right: 8px;
+        }
+        .review{
+            margin-top: 48px;
+            background-color: rgb(243, 243, 243);
+        }
+        .user{
+            display: flex;
+            position: absolute;
+            bottom: 6px;
+            margin-left: 40px;
+        }
+        .container .reviews1{
+            display: flex;
+        }
+        .bottomm p{
+            font-size: 18px;
+            font-weight: 900;
+            margin-top: 20px;
+            margin-bottom: 8px;
+        }
+        .footer{
+            font-size: 16px;
+        }
+        .footer-top a{
+            font-size: 16px;
+            line-height: 52px;
+            text-decoration: none;
+            color: rgb(54, 54, 54);
+            font-weight: 900;
+        }
+        .footer-1 a{
+            text-decoration: none;
+            line-height: 28px;
+            color: rgb(44, 44, 44);
+            margin-right: 32px;
+            font-weight: 700;
+        }
+        .footer-1 a span{
+            color: rgb(117, 117, 117);
+        }
+        .user{display: flex;
+        flex-direction: row;
+        }
+        .profile{
+            height: 50px;}
+        .eeexex p{
+            color: white;
+            height: 40px;
+            margin-top: 8px;
+            font-size: 16px;
+        }
+        .eeexex p span{
+            font-weight: 900;
+        }
+        .overtaa{
+            bottom: 4px;
+            width: 232px;
+            height: 232px;
+            position: absolute;
+            background: linear-gradient(rgba(0, 0, 0, 0), rgb(0, 0, 0));
+        }
+        .overtaa:hover{
+            background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0));
+        }
+    </style>
+</head>
+<body>
+    <div class="header-top-pc">
+        <div class="container">
+            <a href="#">회원가입</a>
+            <a href="4.html">로그인</a>
+            <a href="#">단체주문</a>
+            <a href="#">고객센터</a>
+        </div>    
+    </div>    
+    <div class="header-top">
+        <div class="container">
+            <a href="1.html"><img src="https://i.postimg.cc/527NYpsx/Wallique.png"  alt="Wallique" style="width: 180px; margin-top: 12px;"></a>
+            <div class="header-menu">
+                <a href="#" style="margin-right: 32px;">3D월패널</a>
+                <a href="2.html" style="margin-right: 32px;">스티커</a>
+                <a href="#" style="margin-right: 32px;">시트지</a>
+                <a href="#" style="margin-right: 32px;">액자/3D액자</a>
+                <a href="#" style="margin-right: 32px;">지도</a>
+                <a href="#" style="margin-right: 32px;">메모장</a>
+                <a href="#">악세사리</a>
+            </div>   
+            <div class="my-menu" style="margin-top: 4px;">
+                <a href="#"><img src="https://i.postimg.cc/J0pdcTtq/Vector-1.png" alt="" style="height: 19px; margin-right: 40px;"></a>
+                <a href="#"><img src="https://i.postimg.cc/D0hFX5mw/Vector.png" alt="" style="height: 19px; margin-right: 40px;"></a>
+                <a href="#"><img src="https://i.postimg.cc/xdbSpBzd/Vector-1.png" alt="" style="height: 19px;"></a>
+            </div>
+        </div>
+    </div>
+    <div class="main-graph">
+        <div class="container">
+        <div class="mainGraph">
+            <a class="ppp" style="display: block;" href="#">
+            <div style="box-sizing: content-box; padding: 128px 0px;" class="MGP">
+                <p style="font-size: 45px; margin-bottom: 100px;">평생 산직할 연말 선물 모음전<br><span>연말에는 추억을 선물하세요</span></p>
+                <p style="font-size: 16px; margin-bottom: 24px;">2022.11.21(월)</p>
+                <a href="#" style=" display: block; width: 120px; padding: 12px 46px; background-color: rgb(172, 172, 172); border-radius: 12px;">이벤트 자세히 보기</a>
+            </div>
+            </a>
+        </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="inquiry-info">
+            <div class="info">
+                <p style="margin-bottom:24px"><span>공지사항</span></p>
+                <hr style="width: 100px; border-style: inset; border-width: 2px; border-bottom: 0px;"><hr style="width: 522px; border-style: inset; border-width: 1px; border-bottom: 0px;">
+                <div class="info-box">
+                    <div style="margin-top: 20px;" class="info-box1">
+                        <a href="">[2022] 추석연휴 택배마감일정</a>
+                        <a href="">08/29</a>
+                    </div>
+                    <div class="info-box1">
+                        <a href="">[2022] 여름휴가 휴무안내</a>
+                        <a href="">07/21</a>
+                    </div>
+                    <div class="info-box1">
+                        <a href="">[2022] 설연휴 택배마감 안내</a>
+                        <a href="">01/14</a>
+                    </div>
+                    <div class="info-box1">
+                        <a href="">[2022] 처석연휴 택배마감공지</a>
+                        <a href="">09/10</a>
+                    </div>
+                    <div class="info-box1">
+                        <a href="">[2021] 여름휴가휴무 8/2(월)~4(수)</a>
+                        <a href="">07/21</a>
+                    </div>
+                    <div class="info-box1">
+                        <a href="">[2021] PAYCO 결제가능</a>
+                        <a href="">03/11s</a>
+                    </div>
+                </div>
+            </div>
+            <div class="bid"></div>
+            <div class="inquiry">
+                <p style="margin-bottom:24px"><span>문의사항</span></p>
+                <hr style="width: 100px; border-style: inset; border-width: 2px; border-bottom: 0px;"><hr style="width: 522px; border-style: inset; border-width: 1px; border-bottom: 0px;">
+                <div style="margin-top: 32px;" class="inquiry-box">
+                    <div class="inquiry-box ITEM1">
+                        <a style="margin-bottom: 87px;" href="#">혹시 노트북<br>터치패드 부분만<br>제작이 가능한가요?</a>
+                        <a>2022.12.11</a>
+                    </div>
+                    <div class="inquiryy">
+                    <div class="inquiry-box ITEM2">
+                        <a href="">혹시 배송이 3일보다 더 늦어질까요?</a>
+                        <a>2022.12.10</a>
+                    </div>
+                    <div class="inquiry-box ITEM2">
+                        <a href="">아크릴 주문하려는데 깨질 것 같아서 문..</a>
+                        <a>2022.12.8</a>
+                    </div>
+                    </div>
+                    <div class="inquiryy">
+                    <div class="inquiry-box ITEM2">
+                        <a href="">액자 실물 크기가 어떻게 되는지 궁금..</a>
+                        <a>2022.12.8</a>
+                    </div>
+                    <div class="inquiry-box ITEM2">
+                        <a href="">나무 스티커 제거할 때 아세톤..</a>
+                        <a>2022.12.7</a>
+                    </div>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="promotion-wrap">
+        <div class="container">
+                <div class="contain-promote">
+                    <div style="margin-right: 20px;" class="promote-box1">
+                        <a href="">
+                            <img src="https://i.postimg.cc/cCLHvjTY/Rectangle-28.png" alt="" style="height: 230px;">
+                        </a>
+                        <div class="bottom">
+                            <div class="bottomm"><p>띠부띠부씰</p></div>
+                            <p>이유있는 1등, 월니크 띠부띠부씰!<br>그 남다른 클라스를 경험해보세요.</p>
+                    </div>
+                </div>   
+            <div style="margin-right: 20px;" class="promote-box1">
+                <a href="">
+                    <img src="https://i.postimg.cc/g2VnBvwx/Rectangle-29.png" alt="" style="height: 230px;">
+                </a>
+                <div class="bottom">
+                    <div class="bottomm"><p> 스티커제작</p></div>
+                    <p>내가 원하는 모양으로 내가 원하는 만큼<br>아기자기 귀여운 스티커를 만들어보세요.</p>
+                </div>
+            </div>
+            <div class="promote-box1">
+                <a href="">
+                    <img src="https://i.postimg.cc/Mpm1jkm3/Rectangle-30.png" alt="" style="height: 230px;">
+                </a>
+                <div class="bottom">
+                    <div class="bottomm"><p>나무그래픽스티커</p></div>
+                    <p>월니크의 가장 인기 상품!<br>스티커 한 장으로 방의 분위기를 바꿔보세요</p>
+                </div>
+            </div>
+                </div>
+        </div>
+    </div>
+    <div class="benner">
+        <div class="container">
+            <img src="https://i.postimg.cc/vT1rqXS7/sub-Banner-2x.jpg" alt="" style="height: 330px;">
+        </div>
+    </div>
+    <div style="margin-top: 60px;" class="promotion-wrap">
+        <div class="container">
+                <div class="contain-promote">
+                    <div style="margin-right: 20px;" class="promote-box1">
+                        <a href="">
+                            <img src="https://i.postimg.cc/DwNn606S/Rectangle-28-1.png" alt="" style="height: 230px;">
+                        </a>
+                        <div class="bottom">
+                            <div class="bottomm"><p>우표 스티커</p></div>
+                            <p>우표모양 틀에 원하는 그림을 쏘옥!<br>다른 사람에게 선물해도 좋아요</p>
+                    </div>
+                </div>   
+            <div style="margin-right: 20px;" class="promote-box1">
+                <a href="">
+                    <img src="https://i.postimg.cc/3NxczCJY/Rectangle-29-1.png" alt="" style="height: 230px;">
+                </a>
+                <div class="bottom">
+                    <div class="bottomm"><p>별 스티커</p></div>
+                    <p>좋아하는 이미지를 별에 담아서<br>다이어리를 꾸며봐요</p>
+                </div>
+            </div>
+            <div class="promote-box1">
+                <a href="">
+                    <img src="https://i.postimg.cc/59zYCdx5/Rectangle-30-1.png" alt="" style="height: 230px;">
+                </a>
+                <div class="bottom">
+                    <div class="bottomm"><p>말풍선 스티커</p></div>
+                    <p>나만의 커스텀 상품으로,<br>귀여운 말풍선 모양 스티커를 만들어요.</p>
+                </div>
+            </div>
+                </div>
+        </div>
+    </div>
+    <div class="promotion-wrap">
+        <div class="container">
+                <div class="contain-promote">
+                    <div style="margin-right: 20px;" class="promote-box1">
+                        <a href="">
+                            <img src="https://i.postimg.cc/wBP59XV9/Rectangle-28.png" alt="" style="height: 230px;">
+                        </a>
+                        <div class="bottom">
+                            <div class="bottomm"><p>팬북</p></div>
+                            <p>디자인도 사이즈도 취향대로 OK<br>새로워진 AI 편집 기능을 경험해 보세요.</p>
+                    </div>
+                </div>   
+            <div style="margin-right: 20px;" class="promote-box1">
+                <a href="">
+                    <img src="https://i.postimg.cc/CMb5KGNm/Rectangle-29.png" alt="" style="height: 230px;">
+                </a>
+                <div class="bottom">
+                    <div class="bottomm"><p>마음이 담긴 특별한 카드</p></div>
+                    <p>나만의 커스텀 홈/리빙 상품으로,<br>손쉽게 공간의 분위기를 바꿔보세요.</p>
+                </div>
+            </div>
+            <div class="promote-box1">
+                <a href="">
+                    <img src="https://i.postimg.cc/gJ8znpvn/Rectangle-30.png" alt="" style="height: 230px;">
+                </a>
+                <div class="bottom">
+                    <div class="bottomm"><p>행복한 순간을 영원히</p></div>
+                    <p>사랑하는 지금 이 순간을<br>평생 간직하세요</p>
+                </div>
+            </div>
+                </div>
+        </div>
+    </div>
+    <div class="review">
+        <div class="review-box">
+            <div style="height: 60px;"></div>
+            <div class="container">
+                <p style="font-weight: 700; text-align: center; font-size: 32px;">@Wallique&nbsp;&nbsp;&nbsp;#Wallique_Goods</p>
+                <div style="margin-top: 32px;" class="reviews1">
+                    <div class="review-box st1">
+                        <a href="">
+                            <img src="https://i.postimg.cc/zD28BD7M/317822148-155889963843206-276106145044460644-n.jpg" alt=""style="width: 232px;">
+                            <div class="overtaa"></div>
+                            <div class="user">
+                                <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@hoduuuskiki">
+                                <div class="eeexex">
+                                    <p><span>hoduuuskiki</span><br>8 days ago</p>
+                                </div>            
+                            </div>
+                        </a>
+                    </div>
+                    <div class="reviews1">
+                        <div class="review-box st1">
+                            <a href="">
+                                <img src="https://i.postimg.cc/L8WYdyy8/315106372-1200798380470963-978651381176031048-n.jpg" alt=""style="width: 232px;">
+                                <div class="overtaa"></div>
+                                <div class="user">
+                                    <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@liby_ggomi">
+                                    <div class="eeexex">
+                                        <p><span>liby_ggomi</span><br>10s days ago</p>
+                                    </div>            
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="reviews1">
+                        <div class="review-box st1">
+                            <a href="">
+                                <img src="https://i.postimg.cc/V6xp3ctW/314605101-1508555392899992-3417060273783315889-n.jpg" alt=""style="width: 232px;">
+                                <div class="overtaa"></div>
+                                <div class="user">
+                                    <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@jjarini_">
+                                    <div class="eeexex">
+                                        <p><span>jjarini_</span><br>a week ago</p>
+                                    </div>            
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="reviews1">
+                        <div class="review-box st1">
+                            <a href="">
+                                <img src="https://i.postimg.cc/7PcSrZfk/312685438-602749568201530-8073266890237598879-n.jpg" alt=""style="width: 232px;">
+                                <div class="overtaa"></div>
+                                <div class="user">
+                                    <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@hoduuuskiki">
+                                    <div class="eeexex">
+                                        <p><span>htollgrain</span><br>a month ago</p>
+                                    </div>            
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="reviews1">
+                        <div class="review-box st1">
+                            <a href="">
+                                <img src="https://i.postimg.cc/L4Z3XPdX/312475546-1510568493105514-4102574212087123651-n.jpg" alt=""style="width: 232px;">
+                                <div class="overtaa"></div>
+                                <div class="user">
+                                    <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@hoduuuskiki">
+                                    <div class="eeexex">
+                                        <p><span>daeng.nu_</span><br>2 month ago</p>
+                                    </div>            
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            <!--후기 두번째 박스-->
+            <div style="margin-top: 4px;" class="reviews1">
+                <div class="review-box st1">
+                    <a href="">
+                        <img src="https://i.postimg.cc/wTgRpRgn/309245891-845819676409133-4037791432832507802-n.jpg" alt=""style="width: 232px;">
+                        <div class="overtaa"></div>
+                        <div class="user">
+                            <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@hoduuuskiki">
+                            <div class="eeexex">
+                                <p><span>gu_ch_0401</span><br>2 months ago</p>
+                            </div>            
+                        </div>
+                    </a>
+                </div>
+                <div class="reviews1">
+                    <div class="review-box st1">
+                        <a href="">
+                            <img src="https://i.postimg.cc/sg82vMCj/311624084-398801542300572-6107358693340548864-n.jpg" alt=""style="width: 232px;">
+                            <div class="overtaa"></div>
+                            <div class="user">
+                                <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@hoduuuskiki">
+                                <div class="eeexex">
+                                    <p><span>morsola_dal</span><br>2 months ago</p>
+                                </div>            
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="reviews1">
+                    <div class="review-box st1">
+                        <a href="">
+                            <img src="https://i.postimg.cc/XJn6JWqN/311122141-768809017521401-1733569241912338495-n.jpg" alt=""style="width: 232px;">
+                            <div class="overtaa"></div>
+                            <div class="user">
+                                <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@hoduuuskiki">
+                                <div class="eeexex">
+                                    <p><span>castle_y</span><br>2 months ago</p>
+                                </div>            
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="reviews1">
+                    <div class="review-box st1">
+                        <a href="">
+                            <img src="https://i.postimg.cc/DyJH706d/310812090-196411786082152-2805034481379110351-n.jpg" alt=""style="width: 232px;">
+                            <div class="overtaa"></div>
+                            <div class="user">
+                                <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@hoduuuskiki">
+                                <div class="eeexex">
+                                    <p><span>goyoo_blank</span><br>2 months ago</p>
+                                </div>            
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="reviews1">
+                    <div class="review-box st1">
+                        <a href="">
+                            <img src="https://i.postimg.cc/hGz1dQJp/309131119-643611607269818-2154363613608375672-n.jpg" alt=""style="width: 232px;">
+                            <div class="overtaa"></div>
+                            <div class="user">
+                                <img class="profile" src="https://cdn.attractt.com/embed/images/error/404-profile.png" alt="@hoduuuskiki">
+                                <div class="eeexex">
+                                    <p><span>dalkomi0524</span><br>2 months ago</p>
+                                </div>            
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+                <div style="height: 60px;"></div>
+            </div>
+        </div>
+    </div>
+    <div style="background-color: rgb(161, 161, 161);" class="footer">
+    <div class="container">
+        <div class="footer-top">
+            <a style="margin-right: 24px;" href="#">ABOUT US</a>
+            <a style="margin-right: 24px;"href="#">AGREEMENT</a>
+            <a style="margin-right: 24px;"href="#">PRIVACY POLICY</a>
+            <a style="margin-right: 24px;"href="#">USER GUIDE</a>
+            <a style="margin-right: 24px;"href="#">SITEMAP</a>
+        </div>
+    </div>    
+    </div>
+    <div style="background-color: #E0E0E0; padding: 32px;" class="footer">
+        <div class="container">
+            <div class="footer-bottom">
+            <div class="footer-1">
+                <a href=""><span>회사</span> (주) 홈앤아이디어</a>
+                <a href=""><span>주소</span> 대구 달서구 성서공단남로23길 26 2층</a>
+            </div>
+            <div class="footer-1">
+                <a href=""><span>대표</span> 송상근</a>
+                <a href=""><span>사업자등록번호</span> 514-81-74198</a>
+                <a href=""><span>통신판매업신고번호</span> 제-2010-대구달서-0582호</a>
+                <a href=""><span>개인정보관리자</span> 송상근</a>
+            </div>
+            <div class="footer-1">
+                <a href=""><span>전화번호</span> Te:053-582-8008</a>
+                <a href=""><span>팩스번호</span> 053-592-2549</a>
+                <a href=""><span>메일</span> homenidea@hanmail.net</a>
+            </div>
+            <div class="footer-1">
+                <a href=""><span>Copyright</span></a>
+            </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
